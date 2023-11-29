@@ -9,3 +9,10 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Player {
+  id Int @id @default(autoincrement())
+  fistname String
+  lastname String
+  team String
+}
